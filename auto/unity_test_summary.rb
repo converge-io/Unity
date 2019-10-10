@@ -126,6 +126,7 @@ if $0 == __FILE__
 
     # run the summarizer
     puts uts.run
+    exit uts.failures
   rescue StandardError => e
     uts.usage e.message
   end
